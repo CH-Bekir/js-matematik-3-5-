@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        let toplam = 0;
+
+        for (let i = 4; i <= 99; i++){
+            // 4 den 99 a kadar olan sayıların for döngüsü,
+            // for döngüsünden çıkan sayılar if e geçerler.
+            // if den çıkan sayıların toplamı "toplam" degişkenine atanır
+            if (i % 3 === 0 && i % 5 === 0) 
+            //i nin 3 e VE (&) 5 e bölümünden mod alınca(%) kalan === 0 olunca,
+             {
+             toplam += i;
+            }
+        }
+
+        console.log(toplam); 
+
+    </script>
+</body>
+</html>
